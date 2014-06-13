@@ -1,0 +1,467 @@
+$maincolor: dodgerBlue;
+$secondcolor: #ccc; 
+
+@mixin box{
+
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+@mixin border-radius($item){
+
+	border-radius: $item;
+	-webkit-border-radius: $item;
+}
+
+@mixin transition($item){
+
+	transition: $item;
+	-moz-transition: $item;
+	-webkit-transition: $item;
+	-o-transition: $item;
+	-ms-transition: $item;
+}
+
+@mixin color($item){
+
+	border: 2px solid ($item);
+
+	&:hover{
+					
+		border-color: darken($item,10%);
+		background: $item;
+
+	}
+}
+
+@mixin color2($item){
+					
+	border:2px solid darken($item,10%);
+	background: $item;
+}
+
+// layout
+
+html, body{
+	
+	width: 100%;
+	height: 100%;
+	font-family: 'bariol';
+	font-size: 1em;
+	line-height: 1.5em;
+	background: #fff;
+
+}
+
+.loader{
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3000;
+	background: gold;
+}
+.container{
+
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+header, .content, footer{
+
+	@include box;
+	padding: 0 48px;
+}
+
+header{
+
+	width: 100%;
+	height: 96px;
+	background: $maincolor;
+	color: #fff;
+	position: relative;
+
+	ul{
+
+		width: 100%;
+		height: 100%;
+		
+
+		li{
+
+			float: right;
+			font-size: 1.125em;
+			
+
+			&.logo{
+
+				float: left;
+				width: 96px;
+				height: 100%;
+			}
+
+			h1{
+
+				font-size: 2em;
+				width: 100%;
+				height: 100%;
+
+				a{
+
+					display: block;
+					color: #fff;
+					width: 100%;
+					height: 100%;
+					@include box;
+					padding: 32px 0 0 0;
+				}
+			}
+
+			&.profil{
+
+				margin-top: 32px;
+				padding-right: 36px;
+				position: relative;
+
+				&:hover:after{
+
+					background-image: url(../img/croix-blue.png);
+					background-color: #fff;
+				}
+
+				&:after{
+					
+					content: "";
+					display: block;
+					width: 24px;
+					height: 24px;
+					background: url(../img/croix.png)no-repeat -1px 0;
+					border-radius: 1000px;
+					-webkit-border-radius: 1000px;
+					border: 2px solid #fff;
+					position: absolute;
+					top: 50%;
+					margin-top: -12px;
+					right: 0;
+					@include transition(all .4s ease);
+					cursor: pointer;
+
+				}
+			}
+		}
+	}
+
+	&:after{
+
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background: darken($maincolor,10%);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.content{
+
+	width: 100%;
+	@include box;
+	padding: 48px 48px 48px 92px;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+
+
+	ul{
+
+		width: 32px;
+		height: 384px;
+		@include box;
+		float: left;
+		position: relative;
+		margin-left: 25px;
+
+		&:first-child{
+
+			margin-left: 0;
+		}
+
+		li{
+
+			display: block;
+			width: 32px;
+			height: 32px;
+			@include border-radius(1000px);
+			border: 2px solid $secondcolor;
+			cursor: pointer;
+			margin: 18.28571428571429px 0;
+			@include box;
+			@include transition(all .4s ease);
+			position: relative;
+			overflow: hidden;
+
+			&:after{
+
+				content: "";
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: rgba(0,0,0,0);
+				top: 0;
+				left: 50%;
+				@include transition(all .4s ease);
+					
+			}
+
+			&:first-child{
+
+				margin-top: 0;
+			}
+
+			&:last-child{
+
+				margin-bottom: 0;
+			}
+
+			&.jaune{
+
+				@include color2(gold);
+			}
+			&.orange{
+
+				@include color2(#FF7900);
+			}
+			&.rouge{
+
+				@include color2(Crimson);
+			}
+			&.mauve{
+
+				@include color2(#C659C2);
+			}
+			&.bleu{
+
+				@include color2(#1E90FF);
+			}
+			&.turquoise{
+
+				@include color2(#12BFBC);
+			}
+			&.sky{
+
+				@include color2(#77E3C9);
+			}
+			&.vert{
+
+				@include color2(#73D700);
+			}
+
+			&.effect:after{
+				
+				background: rgba(0,0,0,.2);
+			}
+		}
+	}
+}
+
+footer{
+
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 24px;
+	border-top: 2px solid $secondcolor;
+
+	#play{
+
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: yellowgreen;
+		float: left;
+	}
+
+	#convolver{
+
+		display: block;
+		width: 48px;
+		height: 48px;
+		@include border-radius(9999px);
+		@include box;
+		@include transition(all .4s ease);
+		float: left;
+		margin-left: 100px;
+		border: 2px solid #ccc;
+		cursor: pointer;
+
+		&:hover, &.active{
+		
+			@include color2(#ccc);
+
+		}
+	}
+
+	ul{
+		
+		//overflow: hidden;
+		float: right;
+		width: 80%;
+
+		li{
+
+			float: left;
+			display: block;
+			width: 12.5%;
+			font-size: 1.125em;
+			text-align: center;
+			padding-top: 60px;
+			position: relative;
+			cursor: pointer;
+
+			&.un.active span, &.un:hover span{
+			
+				@include color2(gold);
+
+			}
+
+			&.deux.active span, &.deux:hover span{
+			
+				@include color2(#FF7900);
+
+			}
+
+			&.trois.active span, &.trois:hover span{
+			
+				@include color2(Crimson);
+
+			}
+
+			&.quat.active span, &.quat:hover span{
+			
+				@include color2(#C659C2);
+
+			}
+
+			&.cinq.active span, &.cinq:hover span{
+			
+				@include color2(#1E90FF);
+
+			}
+
+			&.six.active span, &.six:hover span{
+			
+				@include color2(#12BFBC);
+
+			}
+
+			&.sept.active span, &.sept:hover span{
+			
+				@include color2(#77E3C9);
+
+			}
+
+			&.huit.active span, &.huit:hover span{
+			
+				@include color2(#73D700);
+
+			}
+
+			span{
+
+				display: block;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -25px;
+				border: 2px solid gold;
+				@include box;
+				@include border-radius(1000px);
+				@include transition(all .4s ease);
+				
+
+			}
+
+			&.un{
+
+				color: gold;
+
+			}
+
+			&.deux{
+
+				color: #FF7900;
+
+				span{
+
+					@include color(#FF7900);
+				}
+			}
+
+			&.trois{
+
+				color: Crimson;
+
+				span{
+
+					@include color(Crimson);
+				}
+			}
+			&.quat{
+
+				color: #C659C2;
+
+				span{
+
+					@include color(#C659C2);
+				}
+			}
+			&.cinq{
+
+				color: #1E90FF;
+
+				span{
+
+					@include color(#1E90FF);
+				}
+			}
+			&.six{
+
+				color: #12BFBC;
+
+				span{
+
+					@include color(#12BFBC);
+				}
+			}
+			&.sept{
+
+				color: #77E3C9;
+
+				span{
+
+					@include color(#77E3C9);
+				}
+			}
+			&.huit{
+
+				color: #73D700;
+
+				span{
+
+					@include color(#73D700);
+				}
+			}
+		}
+
+	}
+}
+
+
+
+

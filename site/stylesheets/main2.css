@@ -1,0 +1,150 @@
+/* line 63, ../sass/main2.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'nexa';
+  font-size: 1em;
+  line-height: 1.5em;
+  background: #2b3744;
+  position: relative;
+}
+
+/* line 74, ../sass/main2.scss */
+.grille {
+  width: 100%;
+  height: 100%;
+  background: url(../img/lineheight.png) repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  pointer-events: none;
+}
+
+/* line 88, ../sass/main2.scss */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 94, ../sass/main2.scss */
+aside {
+  width: 100%;
+  height: 100%;
+  background: #2b3744;
+}
+
+/* line 101, ../sass/main2.scss */
+.content {
+  width: 93.333333333333%;
+  height: 100%;
+  position: absolute;
+  background: #242933;
+  top: 0;
+  right: 0;
+}
+
+/* line 111, ../sass/main2.scss */
+.trackContent {
+  width: 100%;
+  height: 69.333333333333%;
+  padding: 40px 48px 0 24px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+
+/* line 122, ../sass/main2.scss */
+.trackNumber {
+  float: left;
+  height: 100%;
+  width: 9.433962264151%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-top: 5.031446540881%;
+  color: #27aba4;
+}
+/* line 131, ../sass/main2.scss */
+.trackNumber li {
+  display: block;
+  width: 100%;
+  height: 8.571428571429%;
+  padding: 7% 0 13% 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  font-size: 1.125em;
+  margin-bottom: 10%;
+  position: relative;
+  cursor: pointer;
+}
+/* line 144, ../sass/main2.scss */
+.trackNumber li p {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 157, ../sass/main2.scss */
+.trackNumber li:after {
+  content: "";
+  display: block;
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  margin: -14px 0 0 -14px;
+  background: #2b3744;
+  opacity: 0;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 174, ../sass/main2.scss */
+.trackNumber li.active:after {
+  opacity: 1;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+/* line 185, ../sass/main2.scss */
+.subContent {
+  width: 88.679245283019%;
+  height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-left: 1.88679245283%;
+  float: left;
+}
+/* line 194, ../sass/main2.scss */
+.subContent .timeLine {
+  width: 100%;
+  height: 7.692307692308%;
+  margin-bottom: 1.418439716312%;
+  background: blue;
+}
+/* line 203, ../sass/main2.scss */
+.subContent .tracks {
+  width: 3.77358490566%;
+  height: 89.74358974359%;
+}
+/* line 209, ../sass/main2.scss */
+.subContent .tracks li {
+  width: 100%;
+  height: 8.571428571429%;
+  margin-bottom: 33.333333333333%;
+  background: red;
+}

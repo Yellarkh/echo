@@ -1,0 +1,2142 @@
+/* line 115, ../sass/main3.scss */
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'misoLight';
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+  background: #2b3744;
+  position: relative;
+  color: #27aba4;
+  overflow: hidden;
+}
+
+/* line 130, ../sass/main3.scss */
+.grille {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/lineheight.png) repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  display: none;
+  pointer-events: none;
+}
+
+/* line 144, ../sass/main3.scss */
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* line 151, ../sass/main3.scss */
+#calltxt {
+  width: 336px;
+  height: 64px;
+  background: #2b3744;
+  color: #5a748f;
+  position: absolute;
+  top: 4.44444vh;
+  right: -336px;
+  z-index: 20000;
+  font-size: 1.125em;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 164, ../sass/main3.scss */
+#calltxt:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/v.png) no-repeat center;
+}
+/* line 176, ../sass/main3.scss */
+#calltxt li {
+  width: 272px;
+  height: 100%;
+  float: right;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 18px 0 22px 0;
+}
+/* line 186, ../sass/main3.scss */
+#calltxt span {
+  color: #27aba4;
+}
+/* line 190, ../sass/main3.scss */
+#calltxt span:after {
+  content: "'";
+}
+/* line 195, ../sass/main3.scss */
+#calltxt span:before {
+  content: "'";
+}
+/* line 201, ../sass/main3.scss */
+#calltxt.deplace {
+  transform: translate(-336px, 0);
+  -moz-transform: translate(-336px, 0);
+  -webkit-transform: translate(-336px, 0);
+  -o-transform: translate(-336px, 0);
+  -ms-transform: translate(-336px, 0);
+}
+
+/* line 207, ../sass/main3.scss */
+#tuto {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+/* line 217, ../sass/main3.scss */
+#tuto ul {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 225, ../sass/main3.scss */
+#tuto ul li {
+  width: 30vw;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+  background: #2b3744;
+  color: #5a748f;
+  font-size: 1.25em;
+  position: absolute;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+/* line 236, ../sass/main3.scss */
+#tuto ul li:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -12px;
+  background: #2b3744;
+}
+/* line 250, ../sass/main3.scss */
+#tuto ul li h2 {
+  color: #27aba4;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #27aba4;
+}
+/* line 259, ../sass/main3.scss */
+#tuto ul li p {
+  overflow: hidden;
+}
+/* line 264, ../sass/main3.scss */
+#tuto ul li p.submenu {
+  margin-top: 24px;
+  color: #27aba4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* line 271, ../sass/main3.scss */
+#tuto ul li p.submenu:hover {
+  text-decoration: none;
+}
+/* line 278, ../sass/main3.scss */
+#tuto ul li span {
+  color: #27aba4;
+}
+/* line 282, ../sass/main3.scss */
+#tuto ul li span.pages {
+  float: right;
+}
+/* line 290, ../sass/main3.scss */
+#tuto ul #step1 {
+  bottom: 18.4vh;
+  left: 27.4vw;
+}
+/* line 297, ../sass/main3.scss */
+#tuto ul #step2 {
+  top: 11.555555555556vh;
+  left: 50vw;
+  margin-left: -15vw;
+  display: none;
+}
+/* line 304, ../sass/main3.scss */
+#tuto ul #step2:after {
+  bottom: none;
+  top: -12px;
+}
+/* line 311, ../sass/main3.scss */
+#tuto ul #step3 {
+  bottom: 25vh;
+  right: 3.33333vw;
+  display: none;
+}
+/* line 317, ../sass/main3.scss */
+#tuto ul #step3:after {
+  left: auto;
+  right: 40px;
+}
+/* line 325, ../sass/main3.scss */
+#tuto ul #step4 {
+  bottom: 25vh;
+  left: 8.333336666667vw;
+  display: none;
+}
+/* line 331, ../sass/main3.scss */
+#tuto ul #step4:after {
+  left: 40px;
+}
+/* line 337, ../sass/main3.scss */
+#tuto ul #step5 {
+  bottom: 25vh;
+  left: 16vw;
+  display: none;
+}
+/* line 342, ../sass/main3.scss */
+#tuto ul #step5:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  margin-top: -12px;
+  background: #2b3744;
+}
+/* line 359, ../sass/main3.scss */
+#tuto ul #step6 {
+  bottom: 25vh;
+  left: 27.4vw;
+  display: none;
+}
+/* line 367, ../sass/main3.scss */
+#tuto ul #step7 {
+  bottom: 25vh;
+  left: 36vw;
+  display: none;
+}
+/* line 375, ../sass/main3.scss */
+#tuto ul #step8 {
+  display: none;
+  top: 4.4444vh;
+  left: 10vw;
+}
+/* line 382, ../sass/main3.scss */
+#tuto ul #step8:after {
+  bottom: 0;
+  top: 50%;
+  left: -12px;
+  margin: 0;
+  margin-top: -12px;
+}
+/* line 395, ../sass/main3.scss */
+#tuto ul #step9 {
+  display: none;
+  top: 4.4444vh;
+  left: 55vw;
+}
+/* line 401, ../sass/main3.scss */
+#tuto ul #step9:after {
+  display: none;
+}
+/* line 407, ../sass/main3.scss */
+#tuto ul #step9:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  margin-top: -12px;
+  background: #2b3744;
+}
+
+/* line 428, ../sass/main3.scss */
+#alerte {
+  width: 41.666666666667vw;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -20.8333333333335vw;
+  z-index: 8000;
+  opacity: 0;
+  transition: all 0.4s ease 0.5s;
+  -moz-transition: all 0.4s ease 0.5s;
+  -webkit-transition: all 0.4s ease 0.5s;
+  -o-transition: all 0.4s ease 0.5s;
+  -ms-transition: all 0.4s ease 0.5s;
+}
+/* line 440, ../sass/main3.scss */
+#alerte.mouve {
+  transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -webkit-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  -ms-transform: translate(0, 20px);
+  opacity: 1;
+}
+/* line 448, ../sass/main3.scss */
+#alerte li {
+  background: #242933;
+  width: 41.666666666667vw;
+  height: 36px;
+  font-size: 1.125em;
+  text-align: left;
+  padding-top: 5px;
+  width: 100%;
+  padding-left: 54px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+/* line 462, ../sass/main3.scss */
+#alerte li.err3 {
+  color: crimson;
+}
+/* line 466, ../sass/main3.scss */
+#alerte li.err3:after {
+  background: url(../img/x.png) no-repeat center;
+}
+/* line 472, ../sass/main3.scss */
+#alerte li:after {
+  content: "";
+  display: block;
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/v.png) no-repeat center;
+}
+
+/* line 487, ../sass/main3.scss */
+.homePage {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/bck.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 6000;
+  transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+}
+/* line 500, ../sass/main3.scss */
+.homePage .subcontent, .homePage .formConnect {
+  width: 41.666666666667vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20.8333333333335vw;
+}
+/* line 510, ../sass/main3.scss */
+.homePage footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+}
+/* line 518, ../sass/main3.scss */
+.homePage footer a:after {
+  bottom: -6px;
+}
+/* line 524, ../sass/main3.scss */
+.homePage .logoPlace {
+  width: 100%;
+  height: 78px;
+  position: relative;
+}
+/* line 531, ../sass/main3.scss */
+.homePage svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -27px;
+  margin-top: -27px;
+}
+/* line 539, ../sass/main3.scss */
+.homePage svg.rotate {
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+/* line 545, ../sass/main3.scss */
+.homePage p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #fff;
+}
+/* line 557, ../sass/main3.scss */
+.homePage p span {
+  color: #27aba4;
+}
+/* line 562, ../sass/main3.scss */
+.homePage p.min {
+  margin-bottom: 36px;
+}
+/* line 569, ../sass/main3.scss */
+.homePage a.register {
+  font-size: 1.125em;
+  cursor: pointer;
+  float: left;
+  margin-top: 6px;
+}
+/* line 578, ../sass/main3.scss */
+.homePage a {
+  position: relative;
+  color: #27aba4;
+}
+/* line 584, ../sass/main3.scss */
+.homePage a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #27aba4;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+/* line 597, ../sass/main3.scss */
+.homePage a:hover:after {
+  width: 0;
+}
+/* line 602, ../sass/main3.scss */
+.homePage div {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+/* line 615, ../sass/main3.scss */
+.homePage div.alert {
+  margin-bottom: 6px;
+}
+/* line 619, ../sass/main3.scss */
+.homePage div.alert p {
+  font-size: 1.3125em;
+  padding: 0;
+  width: 100%;
+  color: crimson;
+}
+/* line 627, ../sass/main3.scss */
+.homePage div.alert p.error {
+  color: crimson;
+  text-align: right;
+}
+/* line 633, ../sass/main3.scss */
+.homePage div.alert p.valid {
+  color: limegreen;
+  text-align: left;
+}
+/* line 640, ../sass/main3.scss */
+.homePage div button {
+  font-family: "misoLight";
+  background: none;
+  display: block;
+  width: 196px;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 4px 0 8px 0;
+  text-align: center;
+  float: right;
+  margin-top: 24px;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 655, ../sass/main3.scss */
+.homePage div button:hover, .homePage div button:focus {
+  border-color: #27aba4;
+  color: #27aba4;
+  outline: 0;
+}
+/* line 665, ../sass/main3.scss */
+.homePage label {
+  float: left;
+  cursor: pointer;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-top: 6px;
+}
+/* line 675, ../sass/main3.scss */
+.homePage label, .homePage input {
+  color: #fff;
+  font-size: 1.5em;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 682, ../sass/main3.scss */
+.homePage input:hover, .homePage input:focus {
+  color: #27aba4;
+  border-color: #27aba4;
+  outline: 0;
+}
+/* line 689, ../sass/main3.scss */
+.homePage label:hover {
+  color: #27aba4;
+}
+/* line 694, ../sass/main3.scss */
+.homePage input {
+  border: 2px solid #fff;
+  background: none;
+  height: 36px;
+  width: 100px;
+  padding: 0 5px;
+  font-family: "misoLight";
+  float: right;
+  text-align: center;
+}
+/* line 707, ../sass/main3.scss */
+.homePage input.error {
+  border-color: crimson;
+  color: crimson;
+}
+/* line 712, ../sass/main3.scss */
+.homePage input.error:hover, .homePage input.error:focus {
+  border-color: crimson;
+  color: crimson;
+}
+/* line 719, ../sass/main3.scss */
+.homePage #messError {
+  color: crimson;
+  height: 0;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* line 732, ../sass/main3.scss */
+.homePage .formConnect input {
+  width: 250px;
+}
+/* line 737, ../sass/main3.scss */
+.homePage .formConnect input[type=submit] {
+  width: 150px;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  float: right;
+  cursor: pointer;
+}
+
+/* line 749, ../sass/main3.scss */
+aside {
+  width: 100vw;
+  height: 100vh;
+  background: #2b3744;
+  position: relative;
+}
+/* line 756, ../sass/main3.scss */
+aside .profilContent {
+  width: 48.333333333333vw;
+  height: 100vh;
+  position: absolute;
+  left: 6.666666666667vw;
+  top: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 4.44444vh 5vw;
+  font-size: 1.125em;
+  color: #5a748f;
+}
+/* line 771, ../sass/main3.scss */
+aside .profilContent .navSec {
+  height: 7.111111111111vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 7.111111111111vh;
+  font-size: 1.16666666666667em;
+}
+/* line 780, ../sass/main3.scss */
+aside .profilContent .navSec:after {
+  background: #242933;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 792, ../sass/main3.scss */
+aside .profilContent .navSec li {
+  float: left;
+  width: 8.333333333333vw;
+  height: 7.111111111111vh;
+  text-align: bottom;
+  position: relative;
+  margin-right: 1.666666666667vw;
+  cursor: pointer;
+  color: #242933;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 804, ../sass/main3.scss */
+aside .profilContent .navSec li a {
+  color: #242933;
+}
+/* line 808, ../sass/main3.scss */
+aside .profilContent .navSec li:hover, aside .profilContent .navSec li.active, aside .profilContent .navSec li:hover a {
+  color: #5a748f;
+}
+/* line 813, ../sass/main3.scss */
+aside .profilContent .navSec li.unable {
+  cursor: default;
+}
+/* line 817, ../sass/main3.scss */
+aside .profilContent .navSec li.unable p {
+  text-decoration: line-through;
+}
+/* line 822, ../sass/main3.scss */
+aside .profilContent .navSec li.unable:after {
+  display: none;
+}
+/* line 827, ../sass/main3.scss */
+aside .profilContent .navSec li.unable:hover {
+  color: #242933;
+}
+/* line 833, ../sass/main3.scss */
+aside .profilContent .navSec li:last-child {
+  float: right;
+  text-align: right;
+  margin: 0;
+}
+/* line 839, ../sass/main3.scss */
+aside .profilContent .navSec li:last-child:after {
+  right: 0;
+  left: auto;
+}
+/* line 848, ../sass/main3.scss */
+aside .profilContent .navSec li:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #27aba4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 863, ../sass/main3.scss */
+aside .profilContent .navSec li:hover:after, aside .profilContent .navSec li.active:after {
+  opacity: 1;
+  width: 100%;
+}
+/* line 871, ../sass/main3.scss */
+aside .profilContent .navSec li p, aside .profilContent .navSec li a {
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  display: block;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 888, ../sass/main3.scss */
+aside .profilContent .yourtracks {
+  width: 100%;
+  height: 76.444444444444vh;
+  overflow: scroll;
+}
+/* line 894, ../sass/main3.scss */
+aside .profilContent .yourtracks li {
+  float: left;
+  width: 100%;
+  height: 5.333333333333vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0.888888888889vh 0;
+  margin-bottom: 1.777777777778vh;
+}
+/* line 902, ../sass/main3.scss */
+aside .profilContent .yourtracks li span, aside .profilContent .yourtracks li p, aside .profilContent .yourtracks li button {
+  float: left;
+}
+/* line 908, ../sass/main3.scss */
+aside .profilContent .yourtracks li span {
+  margin-right: 1.666666666667vw;
+}
+/* line 912, ../sass/main3.scss */
+aside .profilContent .yourtracks li span.delete {
+  margin: 0;
+  width: 3.333333333333vw;
+  height: 100%;
+  text-indent: -9999px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+/* line 921, ../sass/main3.scss */
+aside .profilContent .yourtracks li span.delete:after, aside .profilContent .yourtracks li span.delete:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 3.555555555556vh;
+  position: absolute;
+  right: 1.777777777778vh;
+  top: 50%;
+  margin-top: -1.777777777778vh;
+  background: #5a748f;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 935, ../sass/main3.scss */
+aside .profilContent .yourtracks li span.delete:after {
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+/* line 940, ../sass/main3.scss */
+aside .profilContent .yourtracks li span.delete:before {
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+/* line 945, ../sass/main3.scss */
+aside .profilContent .yourtracks li span.delete:hover:after, aside .profilContent .yourtracks li span.delete:hover:before {
+  background: #27aba4;
+}
+/* line 952, ../sass/main3.scss */
+aside .profilContent .yourtracks li p {
+  width: 13.333333333333vw;
+  margin-right: 1.666666666667vw;
+}
+/* line 957, ../sass/main3.scss */
+aside .profilContent .yourtracks li p.error {
+  width: 100%;
+}
+/* line 962, ../sass/main3.scss */
+aside .profilContent .yourtracks li p span {
+  margin-right: 1.666666666667vw;
+}
+/* line 966, ../sass/main3.scss */
+aside .profilContent .yourtracks li p span:after {
+  content: '.';
+}
+/* line 973, ../sass/main3.scss */
+aside .profilContent .yourtracks li button {
+  width: 8.333333333333vw;
+  height: 28px;
+  line-height: 2px;
+  background: none;
+  border: none;
+  font-family: 'misoLight';
+  color: #5a748f;
+  font-size: 18px;
+  margin-right: 1.666666666667vw;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 2px solid #5a748f;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 989, ../sass/main3.scss */
+aside .profilContent .yourtracks li button:hover {
+  color: #27aba4;
+  border-color: #27aba4;
+}
+/* line 1005, ../sass/main3.scss */
+aside .rapidMenu li {
+  display: block;
+  width: 6.666666666667vw;
+  height: 6.666666666667vw;
+  text-indent: -9999px;
+  position: relative;
+}
+/* line 1015, ../sass/main3.scss */
+aside .rapidMenu .logo {
+  text-indent: 0;
+  position: relative;
+  cursor: pointer;
+  background-color: #2b3744;
+}
+/* line 1025, ../sass/main3.scss */
+aside .rapidMenu .logo:hover p, aside .rapidMenu .logo.active p {
+  color: #27aba4;
+}
+/* line 1030, ../sass/main3.scss */
+aside .rapidMenu .logo p {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #5a748f;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1043, ../sass/main3.scss */
+aside .rapidMenu .logo:after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url(../img/echo.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -26px;
+  background-color: #5a748f;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1058, ../sass/main3.scss */
+aside .rapidMenu .logo:hover:after, aside .rapidMenu .logo.active:after {
+  background-color: #27aba4;
+}
+/* line 1064, ../sass/main3.scss */
+aside .rapidMenu .gomme, aside .rapidMenu .resetvolume, aside .rapidMenu .reset {
+  cursor: pointer;
+  background-color: #2b3744;
+}
+/* line 1069, ../sass/main3.scss */
+aside .rapidMenu .gomme:after, aside .rapidMenu .resetvolume:after, aside .rapidMenu .reset:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/gomme.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  background-color: #242933;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1086, ../sass/main3.scss */
+aside .rapidMenu .gomme:hover:after, aside .rapidMenu .resetvolume:hover:after, aside .rapidMenu .reset:hover:after {
+  background-color: #5a748f;
+}
+/* line 1096, ../sass/main3.scss */
+aside .rapidMenu .resetvolume:after {
+  background-image: url(../img/volume.png);
+}
+/* line 1104, ../sass/main3.scss */
+aside .rapidMenu .reset a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  background: none;
+}
+/* line 1112, ../sass/main3.scss */
+aside .rapidMenu .reset a:hover, aside .rapidMenu .reset a:focus {
+  outline: 0;
+}
+/* line 1119, ../sass/main3.scss */
+aside .rapidMenu .reset:after {
+  background-image: url(../img/reset.png);
+}
+
+/* line 1128, ../sass/main3.scss */
+.content {
+  width: 93.333333333333vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #242933;
+  transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  z-index: 10;
+}
+/* line 1140, ../sass/main3.scss */
+.content.onright {
+  transform: translate(48.33333vw, 0);
+  -moz-transform: translate(48.33333vw, 0);
+  -webkit-transform: translate(48.33333vw, 0);
+  -o-transform: translate(48.33333vw, 0);
+  -ms-transform: translate(48.33333vw, 0);
+}
+
+/* line 1146, ../sass/main3.scss */
+.trackContent {
+  width: 93.333333333333vw;
+  height: 73.777777777778vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-top: 4.444444444444vh;
+  padding-left: 1.666666666667vw;
+  padding-right: 3.333333333333vw;
+  overflow: hidden;
+}
+/* line 1156, ../sass/main3.scss */
+.trackContent .trackNumber {
+  width: 8.333333333333vw;
+  height: 69.333333333333vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-top: 7.111111111111vh;
+  float: left;
+}
+/* line 1165, ../sass/main3.scss */
+.trackContent .trackNumber li {
+  display: block;
+  width: 100%;
+  height: 5.333333333333vh;
+  position: relative;
+  margin-bottom: 1.777777777778vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 1174, ../sass/main3.scss */
+.trackContent .trackNumber li p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.111111111111vh;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.25em;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+/* line 1190, ../sass/main3.scss */
+.trackContent .trackNumber li:after {
+  content: "";
+  display: block;
+  width: 3.333333333333vh;
+  height: 3.333333333333vh;
+  background: #2b3744;
+  position: absolute;
+  top: 48%;
+  left: 49.5%;
+  margin-left: -1.6666666666665vh;
+  margin-top: -1.6666666666665vh;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  opacity: 0;
+}
+/* line 1208, ../sass/main3.scss */
+.trackContent .trackNumber li.active:after {
+  opacity: 1;
+}
+
+/* line 1216, ../sass/main3.scss */
+.subContent {
+  width: 80vw;
+  height: 69.333333333333vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 1.666666666667vw;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+/* line 1226, ../sass/main3.scss */
+.subContent .timeLine {
+  width: 100%;
+  height: 5.333333333333vh;
+  margin-bottom: 1.777777777778vh;
+}
+/* line 1233, ../sass/main3.scss */
+.subContent .timeLine li {
+  display: block;
+  width: 3.333333333333vw;
+  height: 5.333333333333vh;
+  margin-right: 1.666666666667vw;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+}
+/* line 1245, ../sass/main3.scss */
+.subContent .timeLine li:last-child {
+  margin: 0;
+}
+/* line 1250, ../sass/main3.scss */
+.subContent .timeLine li:after {
+  content: "";
+  display: block;
+  height: 1.777777777778vh;
+  width: 1px;
+  position: absolute;
+  bottom: 0.888888888889vh;
+  left: 50%;
+  background-color: #27aba4;
+}
+/* line 1263, ../sass/main3.scss */
+.subContent .timeLine li.interTime:after {
+  bottom: 0;
+}
+/* line 1271, ../sass/main3.scss */
+.subContent .tracks {
+  width: 3.333333333333vw;
+  height: 62.222222222222vh;
+  float: left;
+  margin-right: 1.666666666667vw;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+/* line 1281, ../sass/main3.scss */
+.subContent .tracks:last-child {
+  margin-right: 0;
+}
+/* line 1291, ../sass/main3.scss */
+.subContent .tracks.repere li span {
+  border-color: #5a748f;
+}
+/* line 1296, ../sass/main3.scss */
+.subContent .tracks:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #5a748f;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: none;
+  opacity: .3;
+}
+/* line 1311, ../sass/main3.scss */
+.subContent .tracks li {
+  width: 3.333333333333vw;
+  height: 5.333333333333vh;
+  margin-bottom: 1.777777777778vh;
+  position: relative;
+  cursor: pointer;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.jaune span {
+  border-color: gold;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.jaune.effect span:after {
+  background-color: gold;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.orange span {
+  border-color: #ff7900;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.orange.effect span:after {
+  background-color: #ff7900;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.rouge span {
+  border-color: crimson;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.rouge.effect span:after {
+  background-color: crimson;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.mauve span {
+  border-color: #ff38af;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.mauve.effect span:after {
+  background-color: #ff38af;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.bleu span {
+  border-color: #5d2fba;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.bleu.effect span:after {
+  background-color: #5d2fba;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.turquoise span {
+  border-color: dodgerblue;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.turquoise.effect span:after {
+  background-color: dodgerblue;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.sky span {
+  border-color: #12bfbc;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.sky.effect span:after {
+  background-color: #12bfbc;
+  opacity: 1;
+}
+/* line 100, ../sass/main3.scss */
+.subContent .tracks li.vert span {
+  border-color: #73d700;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 107, ../sass/main3.scss */
+.subContent .tracks li.vert.effect span:after {
+  background-color: #73d700;
+  opacity: 1;
+}
+/* line 1358, ../sass/main3.scss */
+.subContent .tracks li span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 2px solid #2b3744;
+  background-color: #242933;
+  margin-top: -7px;
+  margin-left: -7px;
+  transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/* line 1375, ../sass/main3.scss */
+.subContent .tracks li span.jaune {
+  border-color: gold;
+}
+/* line 1379, ../sass/main3.scss */
+.subContent .tracks li span.orange {
+  border-color: #FF7900;
+}
+/* line 1383, ../sass/main3.scss */
+.subContent .tracks li span.rouge {
+  border-color: Crimson;
+}
+/* line 1387, ../sass/main3.scss */
+.subContent .tracks li span.mauve {
+  border-color: #FF38AF;
+}
+/* line 1391, ../sass/main3.scss */
+.subContent .tracks li span.bleu {
+  border-color: #5D2FBA;
+}
+/* line 1395, ../sass/main3.scss */
+.subContent .tracks li span.turquoise {
+  border-color: #1E90FF;
+}
+/* line 1399, ../sass/main3.scss */
+.subContent .tracks li span.sky {
+  border-color: #12BFBC;
+}
+/* line 1403, ../sass/main3.scss */
+.subContent .tracks li span.vert {
+  border-color: #73D700;
+}
+/* line 1408, ../sass/main3.scss */
+.subContent .tracks li span:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -2px;
+  background: #242933;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  opacity: 0;
+}
+
+/* line 1432, ../sass/main3.scss */
+.tampon {
+  width: 100%;
+  height: 69.333333333333vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 1442, ../sass/main3.scss */
+.control {
+  width: 93.333333333333vw;
+  height: 26.222222222222vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 2.666666666667vh 3.333333333333vw 4.888888888889vh 1.666666666667vw;
+  overflow: hidden;
+  font-size: 1.5em;
+  color: #5a748f;
+}
+
+/* line 1454, ../sass/main3.scss */
+.controlMenu {
+  width: 8.333333333333vw;
+  height: 18.666666666667vh;
+  float: left;
+}
+/* line 1462, ../sass/main3.scss */
+.controlMenu li {
+  display: block;
+  width: 8.333333333333vw;
+  height: 5.333333333333vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-bottom: 1px solid #27aba4;
+}
+/* line 1470, ../sass/main3.scss */
+.controlMenu li h2 {
+  padding-top: 0.888888888889vh;
+}
+/* line 1478, ../sass/main3.scss */
+.controlMenu #play {
+  width: 8.333333333333vw;
+  height: 13.333333333333vh;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+/* line 1488, ../sass/main3.scss */
+.controlMenu #play:hover span {
+  background-color: #27aba4;
+}
+/* line 1493, ../sass/main3.scss */
+.controlMenu #play span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(../img/play.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #5a748f;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+
+/* line 1513, ../sass/main3.scss */
+.control section {
+  width: 80vw;
+  height: 18.666666666667vh;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 1.666666666667vw;
+}
+
+/* line 1522, ../sass/main3.scss */
+.soundMenu {
+  width: 78.333333333333vw;
+  height: 5.333333333333vh;
+  overflow: hidden;
+  position: relative;
+}
+/* line 1530, ../sass/main3.scss */
+.soundMenu:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #2b3744;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 1543, ../sass/main3.scss */
+.soundMenu li {
+  display: block;
+  float: left;
+  width: 8.333333333333vw;
+  height: 5.333333333333vh;
+  margin-right: 1.666666666667vw;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #2b3744;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1556, ../sass/main3.scss */
+.soundMenu li.convolver {
+  float: right;
+  text-align: right;
+  margin: 0;
+  position: relative;
+  right: -8.333333333333vw;
+  cursor: default;
+}
+/* line 1565, ../sass/main3.scss */
+.soundMenu li.convolver.active {
+  right: 0;
+}
+/* line 1572, ../sass/main3.scss */
+.soundMenu li:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #27aba4;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1587, ../sass/main3.scss */
+.soundMenu li.active:after {
+  opacity: 1;
+  width: 100%;
+}
+/* line 1593, ../sass/main3.scss */
+.soundMenu li.active {
+  color: #5a748f;
+  opacity: 1;
+}
+/* line 1599, ../sass/main3.scss */
+.soundMenu li:hover {
+  color: #5a748f;
+}
+/* line 1604, ../sass/main3.scss */
+.soundMenu li h2 {
+  padding-top: 0.888888888889vh;
+}
+
+/* line 1612, ../sass/main3.scss */
+.soundContent {
+  width: 78.333333333333vw;
+  height: 13.333333333333vh;
+  overflow: hidden;
+  position: relative;
+}
+/* line 1619, ../sass/main3.scss */
+.soundContent ul {
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+}
+
+/* line 1626, ../sass/main3.scss */
+.sounds {
+  width: 78.333333333333vw;
+  height: 13.333333333333vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.un:hover, .sounds:hover li.un.active {
+  color: gold;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.un span {
+  border-color: gold;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.un:hover span, .sounds:hover li.un.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.deux:hover, .sounds:hover li.deux.active {
+  color: #ff7900;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.deux span {
+  border-color: #ff7900;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.deux:hover span, .sounds:hover li.deux.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.trois:hover, .sounds:hover li.trois.active {
+  color: crimson;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.trois span {
+  border-color: crimson;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.trois:hover span, .sounds:hover li.trois.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.quat:hover, .sounds:hover li.quat.active {
+  color: #ff38af;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.quat span {
+  border-color: #ff38af;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.quat:hover span, .sounds:hover li.quat.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.cinq:hover, .sounds:hover li.cinq.active {
+  color: #5d2fba;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.cinq span {
+  border-color: #5d2fba;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.cinq:hover span, .sounds:hover li.cinq.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.six:hover, .sounds:hover li.six.active {
+  color: dodgerblue;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.six span {
+  border-color: dodgerblue;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.six:hover span, .sounds:hover li.six.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.sept:hover, .sounds:hover li.sept.active {
+  color: #12bfbc;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.sept span {
+  border-color: #12bfbc;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.sept:hover span, .sounds:hover li.sept.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 57, ../sass/main3.scss */
+.sounds:hover li.huit:hover, .sounds:hover li.huit.active {
+  color: #73d700;
+}
+/* line 62, ../sass/main3.scss */
+.sounds:hover li.huit span {
+  border-color: #73d700;
+}
+/* line 68, ../sass/main3.scss */
+.sounds:hover li.huit:hover span, .sounds:hover li.huit.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 1684, ../sass/main3.scss */
+.sounds li {
+  float: left;
+  width: 8.333333333333vw;
+  height: 13.333333333333vh;
+  margin-left: 1.666666666667vw;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.88888888888889em;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  padding-top: 10.222222222222vh;
+}
+/* line 1698, ../sass/main3.scss */
+.sounds li:first-child {
+  margin-left: 0;
+}
+/* line 1703, ../sass/main3.scss */
+.sounds li.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 1708, ../sass/main3.scss */
+.sounds li span {
+  display: block;
+  width: 1.805555555556vw;
+  height: 1.805555555556vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.902777777778vw;
+  margin-top: -0.902777777778vw;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 2px solid #2b3744;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.un:hover, .sounds li.un.active {
+  color: gold;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.un:hover span, .sounds li.un.active span {
+  border-color: gold;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.un span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.un:hover span, .sounds li.un.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.deux:hover, .sounds li.deux.active {
+  color: #ff7900;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.deux:hover span, .sounds li.deux.active span {
+  border-color: #ff7900;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.deux span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.deux:hover span, .sounds li.deux.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.trois:hover, .sounds li.trois.active {
+  color: crimson;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.trois:hover span, .sounds li.trois.active span {
+  border-color: crimson;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.trois span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.trois:hover span, .sounds li.trois.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.quat:hover, .sounds li.quat.active {
+  color: #ff38af;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.quat:hover span, .sounds li.quat.active span {
+  border-color: #ff38af;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.quat span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.quat:hover span, .sounds li.quat.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.cinq:hover, .sounds li.cinq.active {
+  color: #5d2fba;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.cinq:hover span, .sounds li.cinq.active span {
+  border-color: #5d2fba;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.cinq span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.cinq:hover span, .sounds li.cinq.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.six:hover, .sounds li.six.active {
+  color: dodgerblue;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.six:hover span, .sounds li.six.active span {
+  border-color: dodgerblue;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.six span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.six:hover span, .sounds li.six.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.sept:hover, .sounds li.sept.active {
+  color: #12bfbc;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.sept:hover span, .sounds li.sept.active span {
+  border-color: #12bfbc;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.sept span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.sept:hover span, .sounds li.sept.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 76, ../sass/main3.scss */
+.sounds li.huit:hover, .sounds li.huit.active {
+  color: #73d700;
+}
+/* line 81, ../sass/main3.scss */
+.sounds li.huit:hover span, .sounds li.huit.active span {
+  border-color: #73d700;
+}
+/* line 86, ../sass/main3.scss */
+.sounds li.huit span {
+  border-color: #2b3744;
+}
+/* line 92, ../sass/main3.scss */
+.sounds li.huit:hover span, .sounds li.huit.active span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+/* line 1771, ../sass/main3.scss */
+.volume, .save, .export, .effets3 {
+  width: 78.333333333333vw;
+  height: 13.333333333333vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+}
+/* line 1781, ../sass/main3.scss */
+.volume li, .save li, .export li, .effets3 li {
+  float: left;
+  width: 8.333333333333vw;
+  height: 13.333333333333vh;
+  margin-left: 1.666666666667vw;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.88888888888889em;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  padding-top: 10.222222222222vh;
+}
+/* line 1795, ../sass/main3.scss */
+.volume li:first-child, .save li:first-child, .export li:first-child, .effets3 li:first-child {
+  margin-left: 0;
+}
+/* line 1800, ../sass/main3.scss */
+.volume li span, .save li span, .export li span, .effets3 li span {
+  display: block;
+  width: 1.805555555556vw;
+  height: 1.805555555556vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.902777777778vw;
+  margin-top: -0.902777777778vw;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 2px solid #5a748f;
+}
+/* line 1816, ../sass/main3.scss */
+.volume li span:after, .save li span:after, .export li span:after, .effets3 li span:after {
+  content: "";
+  display: block;
+  width: 0.6vw;
+  height: 0.6vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.3vw 0 0 -0.3vw;
+  background: #5a748f;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1834, ../sass/main3.scss */
+.volume li.active, .volume li:hover, .volume li.active span, .volume li:hover span, .save li.active, .save li:hover, .save li.active span, .save li:hover span, .export li.active, .export li:hover, .export li.active span, .export li:hover span, .effets3 li.active, .effets3 li:hover, .effets3 li.active span, .effets3 li:hover span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border-color: #27aba4;
+  color: #27aba4;
+}
+/* line 1842, ../sass/main3.scss */
+.volume li:hover span:after, .volume li.active span:after, .save li:hover span:after, .save li.active span:after, .export li:hover span:after, .export li.active span:after, .effets3 li:hover span:after, .effets3 li.active span:after {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  background-color: #27aba4;
+}
+
+/* line 1853, ../sass/main3.scss */
+.export {
+  transform: translate(300%, 0);
+  -moz-transform: translate(300%, 0);
+  -webkit-transform: translate(300%, 0);
+  -o-transform: translate(300%, 0);
+  -ms-transform: translate(300%, 0);
+  position: relative;
+}
+/* line 1858, ../sass/main3.scss */
+.export li {
+  position: relative;
+}
+/* line 1862, ../sass/main3.scss */
+.export li#record:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: crimson;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/* line 1877, ../sass/main3.scss */
+.export li#stopRecord:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #5a748f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1893, ../sass/main3.scss */
+.export li#stopRecord:hover:after {
+  background-color: #27aba4;
+}
+/* line 1898, ../sass/main3.scss */
+.export li.file a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  outline: none;
+}
+/* line 1908, ../sass/main3.scss */
+.export li.file a:hover {
+  outline: none;
+}
+/* line 1913, ../sass/main3.scss */
+.export li.file a:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/download.png) no-repeat center;
+  background-color: #5a748f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1929, ../sass/main3.scss */
+.export li.file a:hover:after {
+  background-color: #27aba4;
+}
+
+/* line 1939, ../sass/main3.scss */
+.save {
+  transform: translate(200%, 0);
+  -moz-transform: translate(200%, 0);
+  -webkit-transform: translate(200%, 0);
+  -o-transform: translate(200%, 0);
+  -ms-transform: translate(200%, 0);
+}
+/* line 1944, ../sass/main3.scss */
+.save li {
+  padding: 0;
+  position: relative;
+}
+/* line 1949, ../sass/main3.scss */
+.save li#encodeJson {
+  padding-top: 10.222222222222vh;
+}
+/* line 1953, ../sass/main3.scss */
+.save li#encodeJson:hover:after {
+  background-color: #27aba4;
+}
+/* line 1960, ../sass/main3.scss */
+.save li#encodeJson:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/sauv.png) no-repeat center;
+  background-color: #5a748f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+/* line 1976, ../sass/main3.scss */
+.save li input {
+  width: 100%;
+  height: 32px;
+  padding: 0;
+  border: 2px solid #5a748f;
+  background: none;
+  font-family: "misoLight";
+  font-size: 21px;
+  color: #5a748f;
+  padding: 0 5px;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -16px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 1994, ../sass/main3.scss */
+.save li input.err2, .save li input.err2:hover, .save li input.err2:focus {
+  border-color: crimson;
+  color: crimson;
+}
+/* line 2000, ../sass/main3.scss */
+.save li input:hover, .save li input:focus {
+  border-color: #27aba4;
+  color: #27aba4;
+  outline: none;
+}
+/* line 2008, ../sass/main3.scss */
+.save li label {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* line 2021, ../sass/main3.scss */
+.effets3 {
+  transform: translate(400%, 0);
+  -moz-transform: translate(400%, 0);
+  -webkit-transform: translate(400%, 0);
+  -o-transform: translate(400%, 0);
+  -ms-transform: translate(400%, 0);
+}
+
+/* line 2026, ../sass/main3.scss */
+.volume li {
+  width: 18.333333333333vw;
+  text-align: left;
+}
+/* line 2031, ../sass/main3.scss */
+.volume li:hover li.selector {
+  border-color: #27aba4;
+}
+/* line 2036, ../sass/main3.scss */
+.volume li p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+/* line 2043, ../sass/main3.scss */
+.volume li p#vol {
+  text-align: right;
+}
+/* line 2049, ../sass/main3.scss */
+.volume li input {
+  width: 18.333333333333vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  opacity: 0;
+  cursor: pointer;
+}
+/* line 2061, ../sass/main3.scss */
+.volume li ul {
+  width: 18.333333333333vw;
+  height: 100%;
+  /*	background: dodgerblue;*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /*border: 2px solid dodgerblue;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* line 2074, ../sass/main3.scss */
+.volume li ul li.tumb {
+  display: block;
+  width: 18.333333333333vw;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  padding: 0;
+  background: #2b3744;
+}
+/* line 2087, ../sass/main3.scss */
+.volume li ul li.selector {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #242933;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border: 2px solid #5a748f;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 0;
+  margin-left: 3px;
+  padding: 0;
+  transition: border 0.4s ease;
+  -moz-transition: border 0.4s ease;
+  -webkit-transition: border 0.4s ease;
+  -o-transition: border 0.4s ease;
+  -ms-transition: border 0.4s ease;
+}
