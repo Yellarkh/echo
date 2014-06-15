@@ -2,7 +2,7 @@
 	
  	try
 	{
-	    $db = new PDO('mysql:host=mysql51-99.perso;dbname=antoinedvzmod1', 'antoinedvzmod1', 'AV9BmNJZnjPb');
+	    $db = new PDO('mysql:host=host;dbname=dbname', 'login', 'password');
 	    
 	}
 	catch (Exception $e)
