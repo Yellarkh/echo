@@ -41,19 +41,8 @@ CREATE TABLE IF NOT EXISTS `members` (
 --
 
 INSERT INTO `members` (`id`, `login`, `password`, `mail`, `status`, `cle`) VALUES
-(1, 'Yellarkh', 'Judith13', 'yellarkh@gmail.com', 1, 'b290aa43a923c90e9feade9027588af9'),
+(1, 'login', 'password', 'mail', 1, 'clé'),
 (2, 'tfedwm14', 'tfedwm14', '', 1, ''),
-(3, 'Sallyskell', 'keepsmiling', 'sabrina.casciato@gmail.com', 1, '272e05967cb8f33037b229ce14ac8a36'),
-(4, 'Olivvv', 'Oliv1277', 'olivvv@gmail.com', 1, '30d821b443126d4f991574e92a5c6461'),
-(5, 'test', 'test', 'test@yopmail.com', 0, '2d7adffa7f57b2a4145423a78d3b1390'),
-(6, 'boblemarin', 'a', 'emeric@minimal.be', 1, '44eb513a0d406afeab409b78bf355935'),
-(7, 'lemagus', 'coucou', 'gabriel@adjust.be', 1, '96eac8203a7ae4cef0842dff7fd2e53a'),
-(8, 'julienhe', 'julien', 'hoshi.graphi@gmail.com', 1, '0bc01273aaf90e3c302e082830f64878'),
-(9, 'pixeline', 'jojojo', 'alexandre@pixeline.be', 1, 'c9fa907b28455e91c89e533f6a169fed'),
-(10, 'stenuitj', 'test', 'jeremy.stenuit9@gmail.com', 1, '1d85915fda37361f90fd42c5b21eb917'),
-(11, 'marius', 'blabla123', 'kofinc@gmail.com', 1, '9e065918a7e4a24468cf5c9c20ca115b'),
-(12, 'coucou', 'coucou', 'coucou@gmail.com', 0, '87ad78878930587f5fb657c2d1f3744c');
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
